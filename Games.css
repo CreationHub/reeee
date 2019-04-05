@@ -1,0 +1,42 @@
+@charset "UTF-8";
+html {}
+  body
+  {
+    background-color: darkblue;
+    background-image: linear-gradient(darkblue, grey);
+    width: auto;
+    height: auto;
+    flex-wrap: wrap;
+
+
+  }
+.startsidaweb
+{
+  display: flex;
+  height: 346px;
+  max-width: 100%;
+  margin: none;
+}
+.navbar
+{
+  display: flex;
+  width: auto;
+  height: auto;
+  background-image: url("../img/bar.png");
+}
+ul{
+  display: flex;
+  margin:auto;
+}
+
+li
+{
+  margin: 30px;
+}
+
+.nav-item
+{
+  background-color: none;
+  height: :auto;
+  width: auto;
+}

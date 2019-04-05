@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <form>
+     Email: <input type="text" name="email"><br>
+     Password: <input type="password" name="pwd" maxlength="8"><br>
+     <input type="submit">
+   </form>
+    <meta charset="utf-8" />
+    <title>Emil's Web - Video Culture</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+  </head>
+  <header>
+    <img class="startsidaweb" alt="Hemsida"src="img/header.png">
+
+  <!-- <img class="navigate" alt="Hemsida"src="img/bar.png"> -->
+  <nav class="navbar">
+    <ul class="navbar-nav" style="list-style-type:none">
+
+      <li class="nav-item">
+        <a class="nav-link" href="Games.html"><img src="img/games.png" /></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="Övrigt.html"><img src="img/other.png" /></a>
+  </li>
+
+    <li class="nav-item">
+<a class="nav-link" href="websida.html"><img src="img/home.png" /></a>
+    </li>
+
+    <li class="nav-item">
+<a class="nav-link" href="music.html"><img src="img/music.png" /></a>
+    </li>
+
+    <li class="nav-item">
+<a class="nav-link" href="movies.html"><img src="img/movies.png" /></a>
+    </li>
+
+  </ul>
+</nav>
+
+  </header>
+    <body>
+
+<div class="slide" style="max-width:500px">
+  <img class="mySlides" src="img/300.jpg" style="width:100%">
+  <img class="mySlides" src="img/icdd.jpg" style="width:100%">
+  <img class="mySlides" src="img/godofwar.jpg" style="width:100%">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+  </body>
+    </html>

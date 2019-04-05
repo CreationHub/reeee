@@ -22,7 +22,7 @@ html {}
   display: flex;
   width: auto;
   height: 130px;
-  background-image: url("../img/bar.png");
+  background-image: url("../bar.png");
   margin: auto;
 }
 ul{

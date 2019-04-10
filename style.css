@@ -2,7 +2,7 @@
 html {}
   body
   {
-    background-image: "img_tenor.gif"
+    background-image: "tenor.gif"
     width: 1920px;
     height: 1080px;
     flex-wrap: wrap;
@@ -22,7 +22,7 @@ html {}
   display: flex;
   width: auto;
   height: 130px;
-  background-image: url("../img/bar.png");
+  background-image: url("bar.png");
   margin: auto;
 }
 ul{

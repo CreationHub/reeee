@@ -2,9 +2,9 @@
 html {}
   body
   {
-    background-color: grey;
-    width: auto;
-    height: auto;
+    background-image: "img_tenor.gif"
+    width: 1920px;
+    height: 1080px;
     flex-wrap: wrap;
     font-family: "Times New Roman", Times, serif;
 
@@ -22,7 +22,7 @@ html {}
   display: flex;
   width: auto;
   height: 130px;
-  background-image: url("bar.png");
+  background-image: url("../img/bar.png");
   margin: auto;
 }
 ul{
@@ -214,4 +214,11 @@ a:hover {
 }
 table, th, td {
   border: 1px solid black;
-  {
+}
+    .mySliders {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-left: 600px;
+
+    }

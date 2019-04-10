@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+<style>
+.mySlides {display:none;}
+</style>
   <head>
     <form>
      Email: <input type="text" name="email"><br>
@@ -8,61 +11,93 @@
    </form>
     <meta charset="utf-8" />
     <title>Emil's Web - Video Culture</title>
-    <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
   </head>
   <header>
-    <img class="startsidaweb" alt="Hemsida"src="header.png">
+    <img class="startsidaweb" alt="Hemsida"src="img/header.png">
 
   <!-- <img class="navigate" alt="Hemsida"src="img/bar.png"> -->
   <nav class="navbar">
     <ul class="navbar-nav" style="list-style-type:none">
 
       <li class="nav-item">
-        <a class="nav-link" href="Games.html"><img src="games.png" /></a>
+        <a class="nav-link" href="Games.html"><img src="img/games.png" /></a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="Övrigt.html"><img src="other.png" /></a>
+      <a class="nav-link" href="Övrigt.html"><img src="img/other.png" /></a>
   </li>
 
     <li class="nav-item">
-<a class="nav-link" href="websida.html"><img src="home.png" /></a>
+<a class="nav-link" href="websida.html"><img src="img/home.png" /></a>
     </li>
 
     <li class="nav-item">
-<a class="nav-link" href="music.html"><img src="music.png" /></a>
+<a class="nav-link" href="music.html"><img src="img/music.png" /></a>
     </li>
 
     <li class="nav-item">
-<a class="nav-link" href="movies.html"><img src="movies.png" /></a>
+<a class="nav-link" href="movies.html"><img src="img/movies.png" /></a>
     </li>
 
   </ul>
 </nav>
-
   </header>
     <body>
+      <style>
 
-<div class="slide" style="max-width:500px">
-  <img class="mySlides" src="300.jpg" style="width:100%">
-  <img class="mySlides" src="icdd.jpg" style="width:100%">
-  <img class="mySlides" src="godofwar.jpg" style="width:100%">
-</div>
+    body  {
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      background-image: url("img/tenor.gif"), url("tenor.gif");
+      background-color: #cccccc;
+    }
 
-<script>
-var myIndex = 0;
-carousel();
+    </style>
+    <div class="mySliders">
+      <img src="img/300.jpg" style="width:30%">
+      <div class="mySliders-display-bottomleft mySliders-large mySliders-container mySliders-padding-16 mySliders-black">
+        "300" The Movie
+      </div>
+    </div>
 
-function carousel() {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-  }
-  myIndex++;
-  if (myIndex > x.length) {myIndex = 1}
-  x[myIndex-1].style.display = "block";
-  setTimeout(carousel, 2000); // Change image every 2 seconds
-}
-</script>
+    <div class="mySliders">
+      <img src="img/godofwar.jpg" style="width:30%">
+      <div class="mySliders-display-bottomright mySliders-large mySliders-container mySliders-padding-16 mySliders-black">
+        God of War
+      </div>
+    </div>
+
+    <div class="mySliders">
+      <img src="img/icdd.jpg" style="width:30%">
+      <div class="mySliders-display-topleft mySliders-large mySliders-container mySliders-padding-16 mySliders-black">
+        Imperial Circus Dead Decadence
+      </div>
+    </div>
+
+    <button class="mySliders-button mySliders-display-left mySliders-black" onclick="plusDivs(-1)">&#10094;</button>
+    <button class="mySliders-button mySliders-display-right mySliders-black" onclick="plusDivs(1)">&#10095;</button>
+
+    </div>
+
+    <script>
+    var slideIndex = 1;
+    showDivs(slideIndex);
+
+    function plusDivs(n) {
+      showDivs(slideIndex += n);
+    }
+
+    function showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("mySliders");
+      if (n > x.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = x.length}
+      for (i = 0; i < x.length; i++) {
+         x[i].style.display = "none";
+      }
+      x[slideIndex-1].style.display = "block";
+    }
+    </script>
   </body>
     </html>
